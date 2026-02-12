@@ -1,15 +1,5 @@
 # The system follows an **agentic loop**:
-User Question
-↓
-SQL Generator Agent
-↓
-SQL Executor
-↓
-SQL Validator Agent
-↓
-(If invalid → Retry)
-↓
-END
+User Question -> SQL Generator Agent -> SQL Executor -> SQL Validator Agent -> (If invalid → Retry) -> END
 
 The workflow continues until:
 - SQL is valid, or
